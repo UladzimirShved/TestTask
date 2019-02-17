@@ -11,27 +11,20 @@ namespace Task2.Pages
 {
     public static class MainPage
     {
-        static BaseElement qSearchButton = new BaseElement(By.XPath("//a[contains(@aria-label, 'q.Search')]"), "Q.SEARCH");
-        static BaseElement xButton = new BaseElement(By.XPath("//div[@id='xbutton']"), "x Button");
+        static BaseElement computersButton = new BaseElement(By.XPath("//span[@title='Компьютеры']"), "Computers");
+        static BaseElement noutbukiButton = new BaseElement(By.XPath("//a[@class='VisitSection__LinkRecipesName'][@href='/noutbuki/']"), "Noutbuki");
 
         public static void GoToTheSearchPage()
         {
-            String currentWindow = Singleton.GetInstance().CurrentWindowHandle;
-
-            if (!qSearchButton.GetElement().Enabled)
+            try
             {
-                xButton.MyClick();
+                computersButton.MyClick();
+                noutbukiButton.MyClick();
             }
-            qSearchButton.MyClick();      
-
-            foreach(String winHandle in Singleton.GetInstance().WindowHandles)
+            catch (Exception e)
             {
-                 if(currentWindow != winHandle)
-                 {                     
-                     Singleton.GetInstance().SwitchTo().Window(winHandle);
-                     Singleton.GetInstance().SwitchTo().Frame("contentFrame");
-                 }
-            }               
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

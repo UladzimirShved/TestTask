@@ -16,16 +16,17 @@ namespace Task2.Tests
         {
             Singleton.GetInstance().Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
             Singleton.GetInstance().Manage().Window.Maximize();
-            Singleton.GetInstance().Navigate().GoToUrl(TestData.baseUrl);
+            //Singleton.GetInstance().Navigate().GoToUrl(TestData.baseUrl);
         }
 
         [Test]
         public void TestSearch()
         {
-            LoginPage.Login();
+            Singleton.GetInstance().Navigate().GoToUrl(TestData.baseUrl);
             MainPage.GoToTheSearchPage();
             SearchPage.StartSearch();
-            Files.WriteResultToFile(SearchPage.GetSearchResults());
+            //Files.WriteResultToFile(SearchPage.GetSearchResults());
+            Assert.True(SearchPage.GetSearchResults());
         }
 
         [OneTimeTearDown]

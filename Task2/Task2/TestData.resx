@@ -118,25 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="baseUrl" xml:space="preserve">
-    <value>https://qsol18030.crm4.dynamics.com/main.aspx</value>
+    <value>https://shop.by/</value>
   </data>
   <data name="browser" xml:space="preserve">
     <value>chrome</value>
     <comment>choose 1 of 2: chrome, remote (for browserstack)</comment>
   </data>
-  <data name="readFilePath" xml:space="preserve">
-    <value>\searchInfo.txt</value>
-  </data>
-  <data name="login" xml:space="preserve">
-    <value>test@qsol1803.onmicrosoft.com</value>
-  </data>
-  <data name="password" xml:space="preserve">
-    <value>Vud71171</value>
-  </data>
-  <data name="outputFilePath" xml:space="preserve">
-    <value>\searchResult.txt</value>
-  </data>
   <data name="waitingTime" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="manufacturer" xml:space="preserve">
+    <value>Lenovo</value>
+  </data>
+  <data name="priceAfter" xml:space="preserve">
+    <value>1500</value>
+  </data>
+  <data name="priceBefore" xml:space="preserve">
+    <value>700</value>
   </data>
 </root>

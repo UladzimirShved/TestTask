@@ -71,14 +71,12 @@
     <Compile Include="Tests\SearchTest.cs" />
     <Compile Include="Utils\BaseElement.cs" />
     <Compile Include="Utils\BrowserFactory.cs" />
-    <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\SearchPage.cs" />
     <Compile Include="TestData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestData.resx</DependentUpon>
     </Compile>
-    <Compile Include="Utils\Files.cs" />
     <Compile Include="Utils\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
